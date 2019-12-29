@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Medec1_0" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Noq-76-24l" customClass="RoundedCornerView" customModule="Medec1_0" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="44" width="414" height="215"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select your city" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jYW-0C-mS9">
+                                        <rect key="frame" x="69" y="92.5" width="165" height="30"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Iue-cx-2LL">
+                                        <rect key="frame" x="17" y="86.5" width="30" height="42"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                                        <state key="normal" title="X">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="0.43137254901960786" green="0.47058823529411764" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Iue-cx-2LL" firstAttribute="centerY" secondItem="Noq-76-24l" secondAttribute="centerY" id="FLX-XO-d1d"/>
+                                    <constraint firstItem="jYW-0C-mS9" firstAttribute="leading" secondItem="Iue-cx-2LL" secondAttribute="trailing" constant="22" id="Nfq-h9-T2o"/>
+                                    <constraint firstItem="Iue-cx-2LL" firstAttribute="leading" secondItem="Noq-76-24l" secondAttribute="leading" constant="17" id="eWE-dC-P7y"/>
+                                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="jYW-0C-mS9" secondAttribute="trailing" constant="20" symbolic="YES" id="eqq-PO-7Ge"/>
+                                    <constraint firstItem="jYW-0C-mS9" firstAttribute="centerY" secondItem="Iue-cx-2LL" secondAttribute="centerY" id="jmL-Fk-0MF"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="topLeft" value="NO"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomLeft" value="YES"/>
+                                    <userDefinedRuntimeAttribute type="boolean" keyPath="bottomRight" value="YES"/>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Search here" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SW0-mA-b2L" customClass="DesignableUITextField" customModule="Medec1_0">
+                                <rect key="frame" x="29" y="238" width="356" height="41"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="41" id="Gp4-2J-Ube"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="image" keyPath="leftImage" value="search"/>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="leftPadding">
+                                        <real key="value" value="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="shadowOffset">
+                                        <size key="value" width="2" height="15"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowRadius">
+                                        <real key="value" value="3"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="shadowOpacity">
+                                        <real key="value" value="0.20000000000000001"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kfy-Sk-AcV">
+                                <rect key="frame" x="0.0" y="259" width="414" height="603"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DEn-qZ-Y5I" customClass="DesignableUIButton" customModule="Medec1_0" customModuleProvider="target">
+                                        <rect key="frame" x="35" y="49" width="33" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="33" id="pjE-9R-nJF"/>
+                                            <constraint firstAttribute="width" constant="33" id="tOl-B7-M8e"/>
+                                        </constraints>
+                                        <state key="normal" title="Button" image="aim"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Use current Location" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9vf-Pv-QTi">
+                                        <rect key="frame" x="76" y="55" width="160" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="DEn-qZ-Y5I" firstAttribute="top" secondItem="kfy-Sk-AcV" secondAttribute="top" constant="49" id="RzF-4N-GkC"/>
+                                    <constraint firstItem="DEn-qZ-Y5I" firstAttribute="leading" secondItem="kfy-Sk-AcV" secondAttribute="leading" constant="35" id="mwq-Et-Rar"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.96078431372549022" green="0.96078431372549022" blue="0.96078431372549022" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Noq-76-24l" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.24" id="2rJ-v3-5xA"/>
+                            <constraint firstItem="kfy-Sk-AcV" firstAttribute="top" secondItem="SW0-mA-b2L" secondAttribute="bottom" constant="-20" id="AKk-sY-PFi"/>
+                            <constraint firstItem="Noq-76-24l" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="KkU-lZ-glx"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="kfy-Sk-AcV" secondAttribute="bottom" id="NB1-9Z-WM5"/>
+                            <constraint firstItem="Noq-76-24l" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Qdv-sV-dgd"/>
+                            <constraint firstItem="kfy-Sk-AcV" firstAttribute="top" secondItem="Noq-76-24l" secondAttribute="bottom" id="ZXW-e6-OZb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="kfy-Sk-AcV" secondAttribute="trailing" id="bKg-C9-4Vv"/>
+                            <constraint firstItem="Noq-76-24l" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="dgT-DO-8vh"/>
+                            <constraint firstItem="kfy-Sk-AcV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="jFB-jd-Ppf"/>
+                            <constraint firstItem="SW0-mA-b2L" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="29" id="sEa-WD-NqS"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="SW0-mA-b2L" secondAttribute="trailing" constant="29" id="som-Ye-V0Y"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="47.826086956521742" y="20.758928571428569"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="aim" width="23" height="23"/>
+        <image name="search" width="14.5" height="14.5"/>
+    </resources>
+</document>
